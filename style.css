@@ -1,0 +1,167 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1{
+    color: darkblue;
+    text-align: center;
+}
+
+h2{
+    color: green;
+}
+
+p, li{
+    font-size: 18px;
+}
+nav{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+img{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+button{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.project-card{
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+a{
+    color: darkblue;
+    font-size: 18px;
+}
+nav a:hover{
+    color: yellow;
+}
+
+button:hover{
+    background-color: green;
+}
+
+.project-card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+input, textarea{
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+form{
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+
+    nav a{
+        display: block;
+        margin: 10px;
+    }
+
+    img{
+        width: 150px;
+    }
+
+    input, textarea{
+        width: 95%;
+    }
+
+    .project-card{
+        margin: 10px;
+    }
+}
+.hero{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero h1{
+    font-size: 40px;
+}
+
+.hero p{
+    font-size: 22px;
+    color: gray;
+}
+.skills-box{
+    text-align: center;
+}
+
+.skill{
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#loader{
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid darkblue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 200px auto;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#content{
+    display: none;
+}
